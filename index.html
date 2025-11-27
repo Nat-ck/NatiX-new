@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NatiX - Professional sports betting odds and tips">
+    <title>NatiX | Live Betting Odds</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="logo-context">
+            <img class="logo" src="./images/logo.jpg" alt="NatiX Logo">
+            <h1><i>NatiX</i></h1>
+        </div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#" class="active">Main</a></li>
+                <li><a href="./templates/about.html">About</a></li>
+                <li><a href="./templates/contact.html">Contact</a></li>
+                <li><a href="./templates/sign_up.php">Sign Up</a></li>
+                <li><a href="./templates/log_in.php">Login</a></li>
+                <li><a href="./php/logout.php">Logout</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-actions">
+            <div class="language-selector">
+                <i class="fas fa-globe"></i>
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="am">አማርኛ</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Carousel -->
+    <section class="hero-section">
+        <div class="slideshow-container">
+            <div class="slide active">
+                <img src="./images/Betting.jewlery.jpg" alt="Betting Promotions">
+            </div>
+            <div class="slide">
+                <img src="./images/Casino-img.jpg" alt="Casino Games">
+            </div>
+            <div class="slide">
+                <img src="./images/Dollar-img.jpg" alt="Win Big">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">❮</button>
+            <button class="next" onclick="changeSlide(1)">❯</button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h2><i class="fas fa-bolt"></i> Quick Menu</h2>
+                <ul>
+                    <li><a href="#"><i class="fas fa-ticket"></i> My Bets</a></li>
+                    <li><a href="#"><i class="fas fa-futbol"></i> Live Scores</a></li>
+                    <li><a href="#"><i class="fas fa-trophy"></i> Top Leagues</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h2><i class="fas fa-newspaper"></i> Latest News</h2>
+                <article class="news-item">
+                    <h4>Man City Signs New Striker</h4>
+                    <p>Big signing ahead of derby clash...</p>
+                </article>
+                <article class="news-item">
+                    <h4>Champions League Draw</h4>
+                    <p>Quarter-final matchups announced!</p>
+                </article>
+            </div>
+
+            <div class="sidebar-section">
+                <h2><i class="fas fa-info-circle"></i> Information</h2>
+                <ul class="info-list">
+                    <li>✅ 18+ only - Gamble responsibly</li>
+                    <li>✅ Odds updated every 5 minutes</li>
+                    <li>✅ Verify bets before confirming</li>
+                    <li>✅ Info only - No real money</li>
+                    <li>✅ Contact support for help</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Betting Section -->
+        <section class="betting-area">
+            <h1 class="section-title"><i class="fas fa-chart-line"></i> Live Odds</h1>
+            
+            <!-- Match Cards -->
+            <div class="match-grid">
+                <!-- Match Card 1 -->
+                <article class="match-card">
+                    <header class="match-header">
+                        <span class="league">Premier League</span>
+                        <span class="time">15 Aug 21:45</span>
+                    </header>
+                    <div class="match-teams">
+                        <div class="team">
+                            <img src="./images/Manutd-logo.jpg" alt="Man Utd" class="team-logo">
+                            <span>Man Utd</span>
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="team">
+                            <img src="./images/Chelsea-logo.jpg" alt="Chelsea" class="team-logo">
+                            <span>Chelsea</span>
+                        </div>
+                    </div>
+                    <div class="odds-container">
+                        <button class="odd-btn" data-odd="3.75">
+                            <span class="odd-label">1</span>
+                            <span class="odd-value">3.75</span>
+                        </button>
+                        <button class="odd-btn" data-odd="3.40">
+                            <span class="odd-label">X</span>
+                            <span class="odd-value">3.40</span>
+                        </button>
+                        <button class="odd-btn" data-odd="2.10">
+                            <span class="odd-label">2</span>
+                            <span class="odd-value">2.10</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Match Card 2 -->
+                <article class="match-card">
+                    <header class="match-header">
+                        <span class="league">La Liga</span>
+                        <span class="time">16 Aug 20:00</span>
+                    </header>
+                    <div class="match-teams">
+                        <div class="team">
+                            <img src="./images/RealMadrid-logo.jpg" alt="Real Madrid" class="team-logo">
+                            <span>Real Madrid</span>
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="team">
+                            <img src="./images/Barcelona-logo.jpg" alt="Barcelona" class="team-logo">
+                            <span>Barcelona</span>
+                        </div>
+                    </div>
+                    <div class="odds-container">
+                        <button class="odd-btn" data-odd="2.30">
+                            <span class="odd-label">1</span>
+                            <span class="odd-value">2.30</span>
+                        </button>
+                        <button class="odd-btn" data-odd="3.50">
+                            <span class="odd-label">X</span>
+                            <span class="odd-value">3.50</span>
+                        </button>
+                        <button class="odd-btn" data-odd="3.00">
+                            <span class="odd-label">2</span>
+                            <span class="odd-value">3.00</span>
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Quick Bet Form -->
+            <section class="quick-bet">
+                <h2><i class="fas fa-coins"></i> Quick Bet</h2>
+                <form id="betForm" class="bet-form">
+                    <div class="form-group">
+                        <label for="game">Select Game</label>
+                        <select id="game" name="game" required>
+                            <option value="">-- Choose Match --</option>
+                            <option value="manutd-chelsea">Man Utd vs Chelsea</option>
+                            <option value="madrid-barca">Real Madrid vs Barcelona</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Bet Amount ($)</label>
+                        <input type="number" id="amount" name="amount" min="1" max="1000" placeholder="10" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Place Bet</button>
+                </form>
+                <div id="result"></div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2025 NatiX BetSmart. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fas fa-phone"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Carousel Script
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+        }
+        
+        function changeSlide(direction) {
+            slideIndex += direction;
+            if (slideIndex >= slides.length) slideIndex = 0;
+            if (slideIndex < 0) slideIndex = slides.length - 1;
+            showSlide(slideIndex);
+        }
+        
+        // Auto-slide
+        setInterval(() => {
+            changeSlide(1);
+        }, 4000);
+
+        // Bet form handler
+        document.getElementById('betForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const result = document.getElementById('result');
+            result.innerHTML = '<div class="success-msg">Bet placed successfully! (Demo mode)</div>';
+            setTimeout(() => result.innerHTML = '', 3000);
+        });
+    </script>
+</body>
+</html>
